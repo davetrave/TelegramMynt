@@ -2,6 +2,8 @@
 .gradle/
 build/
 obj/
+config/
+google-services.json
 *.iml
 local.properties
 TMessagesProj/.cxx/

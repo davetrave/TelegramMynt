@@ -90,7 +90,6 @@ public class IntroActivity extends BaseFragment implements NotificationCenter.No
             pagerMessageTag = new Object();
 
     private int currentAccount = UserConfig.selectedAccount;
-
     private ViewPager viewPager;
     private BottomPagesView bottomPages;
     private TextView switchLanguageTextView;

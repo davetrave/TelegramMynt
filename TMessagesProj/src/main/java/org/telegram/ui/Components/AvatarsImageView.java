@@ -30,7 +30,6 @@ public class AvatarsImageView extends View {
         avatarsDrawable.width = getMeasuredWidth();
         avatarsDrawable.height = getMeasuredHeight();
     }
-
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -40,14 +39,12 @@ public class AvatarsImageView extends View {
     private PremiumGradient.PremiumGradientTools premiumGradient;
     private Text plusText;
     private Paint plusBgPaint;
-
     public void setPlus(int n, int bgColor) {
         premiumGradient = new PremiumGradient.PremiumGradientTools(Theme.key_premiumGradient1, Theme.key_premiumGradient2, -1, -1, -1, null);
         plusText = new Text("+" + n, 12, AndroidUtilities.getTypeface("fonts/num.otf"));
         plusBgPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         plusBgPaint.setColor(bgColor);
     }
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
